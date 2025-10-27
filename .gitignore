@@ -1,0 +1,13 @@
+# Ignore dependencies from npm and Composer:
+/node_modules
+/vendor
+/theme/dist
+/email-test.php
+email-test.php
+
+# Ignore generated JavaScript files:
+*.min.js
+
+# Ignore .DS_Store files from macOS:
+.DS_Store
+/backups
