@@ -25,8 +25,8 @@ function sendEMail($to, $subject, $templatePath, $recipients,$data = []) {
            // 👇 Array of recipients
             $recipients = [
                 'kdhimal@devfinity.com',
-                'jnovak@nowcfo.com',
-                'ari.horton@devfinity.com'
+               // 'sbarber@devfinity.io',
+               // 'ari.horton@devfinity.com'
             ];
 
             // 👇 Loop through array and add each address
@@ -66,14 +66,15 @@ function sendEMail($to, $subject, $templatePath, $recipients,$data = []) {
 
 
 
-    $templatePath = __DIR__ . "/test-old-emails/mail_5_2_fixed_for_dark_mode.html";
+    //$templatePath = __DIR__ . "/test-old-emails/mail_5_2_fixed_for_dark_mode.html";
+    $templatePath = __DIR__ . "/simple-email-template/simple-email-template-new.html";
 
    //$templatePath = __DIR__ . "/mail-3/v3-mail-3.html";
 
    // echo $templatePath;
 
     // Use the subject from the array (fallback in case index missing)
-    $subject =  "Email Template Test - 5";
+    $subject =  "Simple Email Template";
 
     sendEmail(
         'kdhimal@devfinity.com',
